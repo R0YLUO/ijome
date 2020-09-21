@@ -1,0 +1,26 @@
+{
+  "name": "ijome",
+  "version": "1.0.0",
+  "description": "Our solution to the Monash SMEE club hackathon: Hack your Degree. A platform where lecturers can see their students' feelings during a lecture.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/R0YLUO/ijome.git"
+  },
+  "author": "Roy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/R0YLUO/ijome/issues"
+  },
+  "homepage": "https://github.com/R0YLUO/ijome#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
