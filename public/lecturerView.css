@@ -1,3 +1,20 @@
-.studentFeelings {
-    padding: 60px;
+#studentFeelings {
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 40%; 
 }
+#chartnchat {
+    height: 60%;
+}
+#pie {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+#chat {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+

@@ -1,11 +1,3 @@
-// emojis 
-var emoji = {
-    '🧐': "focused (neutral)",
-    '😁': "happy (content is easy)",
-    '😴': "sleepy (lecture is boring)", 
-    '🙁': "struggling (slow down please)", 
-    '🤯': "completely lost (please explain again)"
-}
 // user information 
 var name;
 var feeling = "🧐";
@@ -26,6 +18,7 @@ submit.addEventListener('click', function() {
 });
 
 expressFeeling.addEventListener('click', function() {
+    var prev_feeling = feeling;
     var radios = document.getElementsByName('radio'); 
     for (var i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
@@ -34,7 +27,9 @@ expressFeeling.addEventListener('click', function() {
     }
     socket.emit('studentFeeling', {
         feeling: feeling,
+        prev_feeling: prev_feeling,
         id: socket.id,
         name: name
     })
+    Swal.fire('Your emotion has been expressed!');
 });
